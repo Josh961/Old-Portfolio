@@ -1,0 +1,153 @@
+/* Mixins */
+
+@mixin button-style {
+	height: 315px;
+	width: 520px;
+	margin-bottom: 45px;
+	border: 1px solid black;
+	-webkit-transition-duration: 0.4s;
+  	transition-duration: 0.4s;
+  	outline: 0;
+	cursor: pointer;
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+
+	&:hover {
+		opacity: .5;
+	}
+}
+
+/* Navigation */
+
+.navbar {
+	background-color: #3d4d65;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight: bold;
+
+	.navbar-brand{
+		color: white;
+	}
+
+	.nav-link {
+		color: white;
+		&:hover {
+			color: #d1335b;
+		}
+		&:active, &:focus {
+			background-color: #d1335b;
+			border-radius: 5%;
+		}
+	}
+	
+}
+
+/* Header image */
+
+header  {
+	background-image: url("../images/background.png");
+	background-size: auto;
+	margin-top: 56px;
+	height: 800px;
+	width: auto;
+
+	h1 {
+		color: white;
+		text-align: center;
+		letter-spacing: 1px;
+		font-size: 60px;
+		font-weight: bold;
+		padding-top: 25%;
+	}
+
+	hr {
+		border-top: 5px double;
+		width: 650px;
+		color: white;
+	}
+
+	h2 {
+		color: white;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+}
+
+/* Projects section */
+
+#projects {
+	height: 900px;
+	width: auto;
+
+	h1 {
+		text-align: center;
+		padding: 50px 0;
+		font-weight: bold;
+	}
+
+	img {
+		@include button-style;
+	}
+}
+
+/* About section */
+
+#about {
+	height: 350px;
+	width: auto;
+	background-color: #007bff;
+
+	h1 {
+		text-align: center;
+		padding: 50px 0 25px 0;
+		color: white;
+		font-weight: bold;
+	}
+
+	p {
+		text-align: center;
+		color: white;
+		font-size: 21px;
+		letter-spacing: .5px;
+	}
+}
+
+/* Contact section */
+
+#contact {
+	height: 400px;
+	width: auto;
+	background-color: white;
+
+	h1 {
+		text-align: center;
+		padding: 50px 0;
+		font-weight: bold;
+	}
+
+	img {
+		float: left;
+		padding-left: 3px;
+	}
+
+	#mail {
+		padding: 5px 0;
+	}
+
+	span {
+		padding-left: 5px;
+		font-size: 20px;
+	}
+}
+
+/* Footer */
+
+footer {
+	height: 200px;
+	width: auto;
+	background-color: #2b333f;
+}
+

@@ -1,0 +1,104 @@
+/* Mixins */
+/* Navigation */
+.navbar {
+  background-color: #3d4d65;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: bold; }
+  .navbar .navbar-brand {
+    color: white; }
+  .navbar .nav-link {
+    color: white; }
+    .navbar .nav-link:hover {
+      color: #d1335b; }
+    .navbar .nav-link:active, .navbar .nav-link:focus {
+      background-color: #d1335b;
+      border-radius: 5%; }
+
+/* Header image */
+header {
+  background-image: url("../images/background.png");
+  background-size: auto;
+  margin-top: 56px;
+  height: 800px;
+  width: auto; }
+  header h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 25%; }
+  header hr {
+    border-top: 5px double;
+    width: 650px;
+    color: white; }
+  header h2 {
+    color: white;
+    text-align: center;
+    letter-spacing: 1px; }
+
+/* Projects section */
+#projects {
+  height: 900px;
+  width: auto; }
+  #projects h1 {
+    text-align: center;
+    padding: 50px 0;
+    font-weight: bold; }
+  #projects img {
+    height: 315px;
+    width: 520px;
+    margin-bottom: 45px;
+    border: 1px solid black;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    outline: 0;
+    cursor: pointer; }
+    #projects img img {
+      height: 100%;
+      width: 100%; }
+    #projects img:hover {
+      opacity: .5; }
+
+/* About section */
+#about {
+  height: 350px;
+  width: auto;
+  background-color: #007bff; }
+  #about h1 {
+    text-align: center;
+    padding: 50px 0 25px 0;
+    color: white;
+    font-weight: bold; }
+  #about p {
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    letter-spacing: .5px; }
+
+/* Contact section */
+#contact {
+  height: 400px;
+  width: auto;
+  background-color: white; }
+  #contact h1 {
+    text-align: center;
+    padding: 50px 0;
+    font-weight: bold; }
+  #contact img {
+    float: left;
+    padding-left: 3px; }
+  #contact #mail {
+    padding: 5px 0; }
+  #contact span {
+    padding-left: 5px;
+    font-size: 20px; }
+
+/* Footer */
+footer {
+  height: 200px;
+  width: auto;
+  background-color: #2b333f; }
+
+/*# sourceMappingURL=main.css.map */
