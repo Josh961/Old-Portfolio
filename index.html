@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-  </head
->  <body>
+  </head>
+  <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -18,21 +18,22 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">PROJECTS</a>
+              <a class="nav-link" href="#projects">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     
+    <!-- Header image -->
     <header>
       <div class="container">
         <h1>Joshua Zinkovsky</h1>
@@ -46,6 +47,7 @@
     <section id="projects">
       <div class="container">
         <h1>PROJECTS</h1>
+        <hr class="hr-black">
         <div class="row">
           <div class="col-sm-6">
             <img src="images/bloggy.png" alt="bloggy"/>
@@ -67,6 +69,7 @@
     <section id="about">
       <div class="container">
         <h1>ABOUT</h1>
+        <hr class="hr-white">
         <p>
           I'm currently a Pitt junior studying Computer Science with a certificate in <br>
           Russian and Eastern European Studies. I was born and raised in Pittsburgh to <br>
@@ -81,6 +84,7 @@
     <section id="contact">
       <div class="container">
         <h1>CONTACT</h1>
+        <hr class="hr-black">
         <div class="row">
           <div class="col-sm-4">
             <p>
@@ -93,7 +97,7 @@
             </p>
           </div>
           <div class="col-sm-8">
-            <div class="row">
+            <div class="form-row">
               <div class="col-sm-6 form-group">
                 <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
               </div>
@@ -104,7 +108,7 @@
             <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
             <div class="row">
               <div class="col-sm-12 form-group">
-                <button class="btn btn-default pull-right" type="submit">Send</button>
+                <button class="outline-btn" type="submit">Send</button>
               </div>
             </div> 
           </div>
@@ -112,12 +116,21 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-      
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h1>GitHub</h1><br>
+            <a href="https://github.com/Josh961"><img src="images/octoface.png"></a>
+            <p>Copyright © joshz.me 2017</p>
+          </div>
+        </div>
+      </div>
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/main.js"></script>

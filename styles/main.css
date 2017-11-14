@@ -1,19 +1,56 @@
-/* Mixins */
+/* Mixins and global styles*/
+.hr-black {
+  background-image: url("../images/hr-black.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 75px;
+  width: 250px;
+  border: none !important; }
+
+.hr-white {
+  background-image: url("../images/hr-white.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 75px;
+  width: 250px;
+  border: none !important; }
+
+::selection {
+  background: #ffb7b7; }
+
+::-moz-selection {
+  background: #ffb7b7; }
+
 /* Navigation */
 .navbar {
-  background-color: #3d4d65;
+  height: 100px;
+  background-color: #263442;
   letter-spacing: 1px;
-  font-size: 15px;
-  font-weight: bold; }
+  font-size: 17px;
+  font-weight: bold;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
   .navbar .navbar-brand {
-    color: white; }
+    font-size: 36px;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; }
   .navbar .nav-link {
     color: white; }
     .navbar .nav-link:hover {
       color: #d1335b; }
-    .navbar .nav-link:active, .navbar .nav-link:focus {
-      background-color: #d1335b;
-      border-radius: 5%; }
+    .navbar .nav-link:focus {
+      color: white !important; }
+
+.nav-link.active {
+  background-color: #d1335b;
+  color: white !important;
+  border-radius: 5%; }
+
+.navbar.shrink {
+  height: 64px; }
+  .navbar.shrink .navbar-brand {
+    font-size: 25px; }
 
 /* Header image */
 header {
@@ -40,51 +77,51 @@ header {
 
 /* Projects section */
 #projects {
-  height: 900px;
-  width: auto; }
+  width: auto;
+  padding: 100px 0; }
   #projects h1 {
     text-align: center;
-    padding: 50px 0;
+    font-size: 50px;
     font-weight: bold; }
+  #projects .row {
+    margin-left: 0; }
   #projects img {
     height: 315px;
     width: 520px;
     margin-bottom: 45px;
     border: 1px solid black;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
     outline: 0;
     cursor: pointer; }
+    #projects img:hover {
+      opacity: .5; }
     #projects img img {
       height: 100%;
       width: 100%; }
-    #projects img:hover {
-      opacity: .5; }
 
 /* About section */
 #about {
-  height: 350px;
   width: auto;
+  padding: 100px 0;
   background-color: #007bff; }
   #about h1 {
     text-align: center;
-    padding: 50px 0 25px 0;
     color: white;
+    font-size: 50px;
     font-weight: bold; }
   #about p {
     text-align: center;
     color: white;
-    font-size: 21px;
+    font-size: 23px;
     letter-spacing: .5px; }
 
 /* Contact section */
 #contact {
-  height: 400px;
   width: auto;
+  padding: 100px 0;
   background-color: white; }
   #contact h1 {
     text-align: center;
-    padding: 50px 0;
+    font-size: 50px;
     font-weight: bold; }
   #contact img {
     float: left;
@@ -94,11 +131,43 @@ header {
   #contact span {
     padding-left: 5px;
     font-size: 20px; }
+  #contact textarea {
+    resize: none; }
+  #contact .outline-btn {
+    background-color: white;
+    border: 1px solid #d1335b;
+    border-radius: 2%;
+    color: black;
+    outline: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer; }
+    #contact .outline-btn:hover {
+      background-color: #d1335b;
+      color: white; }
+  #contact .form-control:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(209, 51, 91, 0.6); }
 
 /* Footer */
 footer {
-  height: 200px;
+  height: 300px;
   width: auto;
-  background-color: #2b333f; }
+  padding: 50px;
+  background-color: #212833; }
+  footer h1 {
+    color: white; }
+  footer img {
+    height: 50px;
+    width: 50px; }
+    footer img:hover {
+      content: url("../images/octoface-pink.png"); }
+  footer p {
+    color: white;
+    padding-top: 35px;
+    font-size: 18px;
+    letter-spacing: 1px; }
 
 /*# sourceMappingURL=main.css.map */
