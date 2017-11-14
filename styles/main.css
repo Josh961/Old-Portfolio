@@ -55,10 +55,12 @@
 /* Header image */
 header {
   background-image: url("../images/background.png");
-  background-size: auto;
+  background-size: cover;
+  background-position: center;
   margin-top: 56px;
   height: 800px;
-  width: auto; }
+  max-width: 100%;
+  display: block; }
   header h1 {
     color: white;
     text-align: center;
@@ -67,9 +69,11 @@ header {
     font-weight: bold;
     padding-top: 25%; }
   header hr {
+    color: white;
     border-top: 5px double;
     width: 650px;
-    color: white; }
+    max-width: 100%;
+    display: block; }
   header h2 {
     color: white;
     text-align: center;
@@ -86,8 +90,10 @@ header {
   #projects .row {
     margin-left: 0; }
   #projects img {
-    height: 315px;
+    height: auto;
     width: 520px;
+    max-width: 100%;
+    display: block;
     margin-bottom: 45px;
     border: 1px solid black;
     outline: 0;

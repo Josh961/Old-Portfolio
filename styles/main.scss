@@ -1,8 +1,10 @@
 /* Mixins and global styles*/
 
-@mixin button-style {
-  height: 315px;
+@mixin img-button-style {
+  height: auto;
   width: 520px;
+  max-width: 100%;
+  display: block;
   margin-bottom: 45px;
   border: 1px solid black;
   outline: 0;
@@ -90,10 +92,12 @@
 
 header  {
   background-image: url("../images/background.png");
-  background-size: auto;
+  background-size: cover;
+  background-position: center;
   margin-top: 56px;
   height: 800px;
-  width: auto;
+  max-width: 100%;
+  display: block;
 
   h1 {
     color: white;
@@ -105,9 +109,11 @@ header  {
   }
 
   hr {
+    color: white;
     border-top: 5px double;
     width: 650px;
-    color: white;
+    max-width: 100%;
+    display: block;
   }
 
   h2 {
@@ -134,7 +140,7 @@ header  {
   }
 
   img {
-    @include button-style;
+    @include img-button-style;
   }
 }
 
