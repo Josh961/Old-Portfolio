@@ -21,6 +21,9 @@
 ::-moz-selection {
   background: #ffb7b7; }
 
+body, html {
+  height: 100%; }
+
 /* Navigation */
 .navbar {
   height: 100px;
@@ -55,19 +58,17 @@
 /* Header image */
 header {
   background-image: url("../images/background.png");
-  background-size: cover;
+  height: 100%;
   background-position: center;
-  margin-top: 56px;
-  height: 800px;
-  max-width: 100%;
-  display: block; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   header h1 {
     color: white;
     text-align: center;
     letter-spacing: 1px;
     font-size: 60px;
     font-weight: bold;
-    padding-top: 25%; }
+    padding-top: 32%; }
   header hr {
     color: white;
     border-top: 5px double;
