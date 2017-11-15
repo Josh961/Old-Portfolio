@@ -1,2 +1,4 @@
 # Personal-Website
-A website to share programming projects
+Live and mobile friendly.
+
+Form and modals not yet working.
