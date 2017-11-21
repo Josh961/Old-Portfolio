@@ -94,7 +94,7 @@ body, html {
 
 /* Header image */
 
-header  {
+header {
   background-image: url("../images/background.png");
   height: 100%;
   background-position: center;
@@ -113,7 +113,7 @@ header  {
   hr {
     color: white;
     border-top: 5px double;
-    width: 650px;
+    width: 600px;
     max-width: 100%;
     display: block;
   }
@@ -160,12 +160,17 @@ header  {
     font-weight: bold;
   }
 
-  p {
+  .text-container {
     text-align: center;
-    color: white;
-    font-size: 23px;
-    letter-spacing: .5px;
-  }
+
+    p {
+      display: inline-block;
+      text-align: left;
+      color: white;
+      font-size: 24px;
+      letter-spacing: .5px;
+    }
+  }  
 }
 
 /* Contact section */
@@ -237,7 +242,6 @@ footer {
   img {
     height: 50px;
     width: 50px;
-
     &:hover {
       content: url("../images/octoface-pink.png");
     }

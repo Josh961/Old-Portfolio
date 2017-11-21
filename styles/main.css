@@ -72,7 +72,7 @@ header {
   header hr {
     color: white;
     border-top: 5px double;
-    width: 650px;
+    width: 600px;
     max-width: 100%;
     display: block; }
   header h2 {
@@ -115,11 +115,14 @@ header {
     color: white;
     font-size: 50px;
     font-weight: bold; }
-  #about p {
-    text-align: center;
-    color: white;
-    font-size: 23px;
-    letter-spacing: .5px; }
+  #about .text-container {
+    text-align: center; }
+    #about .text-container p {
+      display: inline-block;
+      text-align: left;
+      color: white;
+      font-size: 24px;
+      letter-spacing: .5px; }
 
 /* Contact section */
 #contact {
