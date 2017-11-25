@@ -19,6 +19,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
+
+
             <li class="nav-item">
               <a class="nav-link" href="#projects">PROJECTS</a>
             </li>
@@ -49,18 +51,91 @@
         <h1>PROJECTS</h1>
         <hr class="hr-black">
         <div class="row">
+          <!-- bloggy -->
           <div class="col-sm-6">
-            <img src="images/bloggy.PNG" alt="bloggy"/>
+            <img class="img-btn" src="images/bloggy.PNG" alt="bloggy" data-toggle="modal" data-target=".bloggy-modal"/>
+            <div class="modal bloggy-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h1>bloggy</h1>
+                  <hr class="hr-black">
+                  <div id="carousel-bloggy" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-bloggy" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-bloggy" data-slide-to="1"></li>
+                      <li data-target="#carousel-bloggy" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="img-responsive center-block d-block w-100" src="images/bloggy1.PNG" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/bloggy2.PNG" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/bloggy3.PNG"  alt="Third slide">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-container">
+                    <p>
+                      Website: <a href="https://bloggy1.herokuapp.com/">bloggy1.herokuapp.com</a><br>
+                      GitHub: <a href="https://github.com/josh961/bloggy">github.com/josh961/bloggy</a>
+                    </p><br>
+                    <button class="outline-btn" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- Programmer Ipsum -->
           <div class="col-sm-6">
-            <img src="images/ipsum.PNG" alt="Programmer Ipsum"/>
+            <img class="img-btn" src="images/ipsum.PNG" alt="Programmer Ipsum" data-toggle="modal" data-target=".ipsum-modal"/>
+            <div class="modal ipsum-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h1>Programmer Ipsum</h1>
+                  <hr class="hr-black">
+                  <div id="carousel-ipsum" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-ipsum" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-ipsum" data-slide-to="1"></li>
+                      <li data-target="#carousel-ipsum" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="img-responsive center-block d-block w-100" src="images/ipsum1.PNG" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/ipsum2.PNG" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/ipsum3.PNG"  alt="Third slide">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-container">
+                    <p>
+                      Website: <a href="https://josh961.github.io/Programmer-Ipsum/">josh961.github.io/Programmer-Ipsum</a><br>
+                      GitHub: <a href="https://github.com/Josh961/Programmer-Ipsum">github.com/josh961/Programmer-Ipsum</a>
+                    </p><br>
+                    <button class="outline-btn" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- MIPS -->
           <div class="col-sm-6">
-            <img src="images/mips-cpu.PNG" alt="MIPS CPU"/>
+            <img class="img-btn" src="images/mips-cpu.PNG" alt="MIPS CPU"/>
           </div>
+          <!-- SpaceGame -->
           <div class="col-sm-6">
-            <img src="images/spacegame.png" alt="SpaceGame"/>
+            <img class="img-btn" src="images/spacegame.png" alt="SpaceGame"/>
           </div>
+
         </div>
       </div>
     </section>

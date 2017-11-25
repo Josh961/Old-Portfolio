@@ -47,6 +47,10 @@ body, html {
   height: 100%;
 }
 
+body {
+  padding-right: 0 !important;
+}
+
 /* Navigation */
 
 .navbar {
@@ -141,9 +145,77 @@ header {
     margin-left: 0;
   }
 
-  img {
+  .img-btn {
     @include img-button-style;
   }
+
+  .modal-dialog {
+    width: 100%;
+    max-width: 1400px;
+
+    h1{
+      padding-top: 20px;
+      text-align: center;
+      float: left;
+    }
+
+    .close {
+      color: #d1335b;
+      font-size: 60px;
+      font-weight: 900;
+      position: absolute;
+      right: 15px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .carousel {
+      width: 100%;
+      height: auto;
+      max-width: 900px;
+      margin: 20px 250px;
+      border: 1px solid #ccc;
+
+      .carousel-indicators li {
+        background-color: #999;
+        background-color: rgba(70,70,70,.25);
+      }
+
+      .carousel-indicators .active {
+        background-color: #444;
+      }
+    }
+
+    .text-container {
+      text-align: center;
+
+      p {
+        display: inline-block;
+        text-align: left;
+        font-size: 24px;
+        letter-spacing: .5px;
+      }
+    }
+
+    .outline-btn {
+      background-color: white;
+      border: 1px solid #d1335b;
+      border-radius: 2%;
+      color: black;
+      outline: none;
+      padding: 8px 16px;
+      margin: 25px 0 75px 0;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        background-color: #d1335b;
+        color: white;
+      }
+    }
+  }
+
 }
 
 /* About section */
@@ -162,6 +234,7 @@ header {
 
   .text-container {
     text-align: center;
+    padding-left: 30px;
 
     p {
       display: inline-block;
