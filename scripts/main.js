@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  // Shrink navbar
   $(window).scroll(function() {
   	if ($(document).scrollTop() > 50) {
   		$('nav').addClass('shrink');
@@ -8,6 +9,7 @@ $(document).ready(function() {
   	}
   });
 
+  // Scrollspy
   $('body').scrollspy({target: ".navbar", offset: 65});
 
   $(".navbar a").on('click', function(event) {
@@ -19,9 +21,9 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-        window.location.hash = hash;
+        // window.location.hash = hash;
       });
     }
   });
-
+ 
 });

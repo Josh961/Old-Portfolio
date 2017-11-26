@@ -1,4 +1,4 @@
 # Personal-Website
 Live and mobile friendly.
 
-Form not yet working.
+Version 1.0
