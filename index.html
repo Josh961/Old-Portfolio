@@ -78,6 +78,11 @@
                       </div>
                     </div>
                   </div>
+                  <p>
+                    A Ruby on Rails web application, bloggy allows users to sign up and submit blog posts, which are then listed publicly. 
+                    Key concepts learned like REST, CRUD, database encryption, etc. User and session models made from scratch, with all sensitive 
+                    information securely encrypted.
+                  </p>
                   <div class="text-container">
                     <p>
                       Website: <a href="https://bloggy1.herokuapp.com/">bloggy1.herokuapp.com</a><br>
@@ -116,6 +121,9 @@
                       </div>
                     </div>
                   </div>
+                  <p>
+                    A lorem ipsum generator specifically for programmers. Responsive and clean design with vanilla CSS and Javascript .
+                  </p>
                   <div class="text-container">
                     <p>
                       Website: <a href="https://josh961.github.io/Programmer-Ipsum/">josh961.github.io/Programmer-Ipsum</a><br>
@@ -129,11 +137,91 @@
           </div>
           <!-- MIPS -->
           <div class="col-sm-6">
-            <img class="img-btn" src="images/mips-cpu.png" alt="MIPS CPU"/>
+            <img class="img-btn" src="images/mips-cpu.png" alt="MIPS CPU" data-toggle="modal" data-target=".mips-modal"/>
+            <div class="modal mips-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h1>MIPS CPU</h1>
+                  <hr class="hr-black">
+                  <div id="carousel-mips" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-mips" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-mips" data-slide-to="1"></li>
+                      <li data-target="#carousel-mips" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="img-responsive center-block d-block w-100" src="images/mips1.PNG" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/mips2.PNG" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/mips3.PNG"  alt="Third slide">
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    Created in Logisim, this MIPS CPU was one of the coolest and most extensive projects I've done at Pitt. It supports 
+                    26 MIPS assembly instructions. Pictured is the main CPU itself, the Arithmetic Logic Unit (ALU), and the control unit
+                    which reads in a specific Opcode, then executes the appropriate instruction. 
+                  </p>
+                  <div class="text-container">
+                    <p>
+                      GitHub: <a href="https://github.com/Josh961/CS-0447">github.com/Josh961/CS-0447</a>
+                    </p><br>
+                    <button class="outline-btn" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- SpaceGame -->
           <div class="col-sm-6">
-            <img class="img-btn" src="images/spacegame.png" alt="SpaceGame"/>
+            <img class="img-btn" src="images/spacegame.png" alt="SpaceGame" data-toggle="modal" data-target=".space-modal"/>
+            <div class="modal space-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h1>SpaceGame</h1>
+                  <hr class="hr-black">
+                  <div id="carousel-space" class="carousel slide" data-interval="false" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-space" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-space" data-slide-to="1"></li>
+                      <li data-target="#carousel-space" data-slide-to="2"></li>
+                      <li data-target="#carousel-space" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="img-responsive center-block d-block w-100" src="images/spacegame1.PNG" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/spacegame2.PNG" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/spacegame3.PNG"  alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-responsive center-block d-block w-100" src="images/spacegame4.PNG"  alt="Fourth slide">
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    SpaceGame was an ambitious attempt at my first hackathon. We used the Oculus Rift and Unity to make a virtual
+                    space environment. The immersion provided by the Oculus still made it a cool project, albeit being fairly simple.
+                  </p>
+                  <div class="text-container">
+                    <p>
+                      Devpost: <a href="https://devpost.com/software/spacegame">devpost.com/software/spacegame</a><br>
+                      GitHub: <a href="https://github.com/Josh961/SteelHacks_2016">github.com/Josh961/SteelHacks_2016</a>
+                    </p><br>
+                    <button class="outline-btn" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
