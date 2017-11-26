@@ -105,27 +105,33 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 
-  h1 {
-    color: white;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 60px;
-    font-weight: bold;
-    padding-top: 40%;
-  }
+  .hdr-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    h1 {
+      color: white;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 60px;
+      font-weight: bold;
+    }
 
-  hr {
-    color: white;
-    border-top: 5px double;
-    width: 600px;
-    max-width: 100%;
-    display: block;
-  }
+    hr {
+      color: white;
+      border-top: 5px double;
+      width: 600px;
+      max-width: 100%;
+      display: block;
+    }
 
-  h2 {
-    color: white;
-    text-align: center;
-    letter-spacing: 1px;
+    h2 {
+      color: white;
+      text-align: center;
+      letter-spacing: 1px;
+    }
   }
 }
 

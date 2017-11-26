@@ -65,23 +65,27 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  header h1 {
-    color: white;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 60px;
-    font-weight: bold;
-    padding-top: 40%; }
-  header hr {
-    color: white;
-    border-top: 5px double;
-    width: 600px;
-    max-width: 100%;
-    display: block; }
-  header h2 {
-    color: white;
-    text-align: center;
-    letter-spacing: 1px; }
+  header .hdr-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .hdr-container h1 {
+      color: white;
+      text-align: center;
+      letter-spacing: 1px;
+      font-size: 60px;
+      font-weight: bold; }
+    header .hdr-container hr {
+      color: white;
+      border-top: 5px double;
+      width: 600px;
+      max-width: 100%;
+      display: block; }
+    header .hdr-container h2 {
+      color: white;
+      text-align: center;
+      letter-spacing: 1px; }
 
 /* Projects section */
 #projects {
