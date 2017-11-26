@@ -53,7 +53,7 @@
         <div class="row">
           <!-- bloggy -->
           <div class="col-sm-6">
-            <img class="img-btn" src="images/bloggy.PNG" alt="bloggy" data-toggle="modal" data-target=".bloggy-modal"/>
+            <img class="img-btn" src="images/bloggy-btn.png" alt="bloggy" data-toggle="modal" data-target=".bloggy-modal"/>
             <div class="modal bloggy-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -96,7 +96,7 @@
           </div>
           <!-- Programmer Ipsum -->
           <div class="col-sm-6">
-            <img class="img-btn" src="images/ipsum.png" alt="Programmer Ipsum" data-toggle="modal" data-target=".ipsum-modal"/>
+            <img class="img-btn" src="images/ipsum-btn.png" alt="Programmer Ipsum" data-toggle="modal" data-target=".ipsum-modal"/>
             <div class="modal ipsum-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -137,7 +137,7 @@
           </div>
           <!-- MIPS -->
           <div class="col-sm-6">
-            <img class="img-btn" src="images/mips-cpu.png" alt="MIPS CPU" data-toggle="modal" data-target=".mips-modal"/>
+            <img class="img-btn" src="images/mips-btn.png" alt="MIPS CPU" data-toggle="modal" data-target=".mips-modal"/>
             <div class="modal mips-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -179,7 +179,7 @@
           </div>
           <!-- SpaceGame -->
           <div class="col-sm-6">
-            <img class="img-btn" src="images/spacegame.png" alt="SpaceGame" data-toggle="modal" data-target=".space-modal"/>
+            <img class="img-btn" src="images/spacegame-btn.png" alt="SpaceGame" data-toggle="modal" data-target=".space-modal"/>
             <div class="modal space-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -262,20 +262,22 @@
             </p>
           </div>
           <div class="col-sm-8">
-            <div class="form-row">
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <form method="POST" action="http://formspree.io/joshua.zky@gmail.com">
+              <div class="form-row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
               </div>
-              <div class="col-sm-6 form-group">
-                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="outline-btn" type="submit">Send</button>
+                </div>
               </div>
-            </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-            <div class="row">
-              <div class="col-sm-12 form-group">
-                <button class="outline-btn" type="submit">Send</button>
-              </div>
-            </div> 
+            </form> 
           </div>
         </div>
       </div>
